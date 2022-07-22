@@ -10,24 +10,55 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    .attribution 
+    {
+       font-size: 11px; text-align: center; 
+    }
+    .attribution a 
+    {
+       color: hsl(242, 85%, 59%); 
+    }
+    body
+    {
+      background-color: hsl(30, 38%, 92%);
+    }
+    /* we use the alt+shift+A to toggle a comment section */
+    img{
+      max-width:100%;       /* This sets the width of the image to the max i.e the div width */    
+      max-height:100%;    /* This sets the height of the iage to the max i.e. the div height */
+    }
+    .center-l{
+      width:20%;
+    }
+    .center-r{
+      width:20%;
+    }
+    /* .center-r{
+      background-color:black;
+    } */
+    .same{
+      background-color:black;
+    }
   </style>
 </head>
 <body>
+  <div class="center-l same">                                               <!-- this is how to declare more than one class names for a single element -->
+    <img src="./images/image-product-desktop.jpg" alt="image">
+  </div>
+  <div class="center-r same">
+    PERFUME
 
-  Preview
+    Gabrielle Essence Eau De Parfum
 
-  Gabrielle Essence Eau De Parfum
+    A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+    $149.99
+    $169.99
 
-  $149.99
-  $169.99
-
-  Add to Cart
-  
+    Add to Cart
+  </div> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
