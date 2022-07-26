@@ -36,7 +36,14 @@
     
     }
     .centering{
+      /* to cetner the divs(center-l and center-r) we nee the next 4 lines */
+      height:100vh;
+      justify-content:center;
+      align-items:center;
       display: flex;
+      
+      /* till here */
+      
       
       
       /* the child will be laid out in a row side-by-side.
@@ -46,29 +53,32 @@
     
     .same{
       position:relative;
-      top:20%;
-      left:30%;
       display:inline-block;
+    }
+    .jeevan{
+      border-radius:50%;
     }
   </style>
 </head>
 <body>
   <div class="centering">
-    <div class="center-l same">                                               <!-- this is how to declare more than one class names for a single element -->
-      <img src="./images/image-product-desktop.jpg" alt="image">
-    </div>
-    <div class="center-r same">
-      PERFUME
+    <div class="jeevan">
+      <div class="center-l same">                                               <!-- this is how to declare more than one class names for a single element -->
+        <img src="./images/image-product-desktop.jpg" alt="image">
+      </div>
+      <div class="center-r same">
+        PERFUME
 
-      Gabrielle Essence Eau De Parfum
+        Gabrielle Essence Eau De Parfum
 
-      A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-      Perfumer-Creator for the House of CHANEL.
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
 
-      $149.99
-      $169.99
+        $149.99
+        $169.99
 
-      Add to Cart
+        Add to Cart
+      </div>
     </div> 
   </div>
   <!-- <div class="attribution">
