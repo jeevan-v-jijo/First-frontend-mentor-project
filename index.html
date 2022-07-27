@@ -30,7 +30,7 @@
     }
     .center-l{
       width:20%;
-    }
+    }  
     .center-r{
       width:20%;
     
@@ -38,9 +38,8 @@
     .centering{
       /* to cetner the divs(center-l and center-r) we nee the next 4 lines */
       height:100vh;
-      justify-content:center;
-      align-items:center;
-      display: flex;
+    
+     
       
       /* till here */
       
@@ -51,22 +50,27 @@
       
     }
     
-    .same{
+    .c-common{
       position:relative;
       display:inline-block;
     }
     .jeevan{
-      border-radius:50%;
+      display:flex;
+      border-radius:20%;
+      overflow:hidden;
+      justify-content:center;   
+      
+     
     }
   </style>
 </head>
 <body>
   <div class="centering">
     <div class="jeevan">
-      <div class="center-l same">                                               <!-- this is how to declare more than one class names for a single element -->
+      <div class="center-l c-common">                                               <!-- this is how to declare more than one class names for a single element -->
         <img src="./images/image-product-desktop.jpg" alt="image">
       </div>
-      <div class="center-r same">
+      <div class="center-r c-common">
         PERFUME
 
         Gabrielle Essence Eau De Parfum
