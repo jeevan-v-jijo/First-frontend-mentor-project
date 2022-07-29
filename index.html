@@ -21,6 +21,7 @@
     }
     body
     {
+      margin:0;
       background-color: hsl(30, 38%, 92%);
     }
     /* we use the alt+shift+A to toggle a comment section */
@@ -29,16 +30,21 @@
       max-height:100%;    /* This sets the height of the iage to the max i.e. the div height */
     }
     .center-l{
-      width:20%;
+      
+      height:300px;
+      display:flex;     /* this makes this div fit the image */
     }  
     .center-r{
-      width:20%;
+      height:300px;  
     
+    }
+    .c-common{
+      display:inline-block;
     }
     .centering{
       /* to cetner the divs(center-l and center-r) we nee the next 4 lines */
-      height:100vh;
     
+     
      
       
       /* till here */
@@ -50,26 +56,17 @@
       
     }
     
-    .c-common{
-      position:relative;
-      display:inline-block;
-    }
-    .jeevan{
-      display:flex;
-      border-radius:20%;
-      overflow:hidden;
-      justify-content:center;   
-      
-     
-    }
+   
   </style>
 </head>
 <body>
   <div class="centering">
-    <div class="jeevan">
+   
+
       <div class="center-l c-common">                                               <!-- this is how to declare more than one class names for a single element -->
         <img src="./images/image-product-desktop.jpg" alt="image">
       </div>
+
       <div class="center-r c-common">
         PERFUME
 
@@ -83,11 +80,11 @@
 
         Add to Cart
       </div>
+
     </div> 
-  </div>
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
+    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
